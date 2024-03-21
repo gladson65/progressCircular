@@ -28,18 +28,23 @@ window.onload = function() {
                 start++;
 
                 proGress.textContent = `${start}`;
+                let font = document.querySelector(".p-value-container")
 
                 if (start <= 25) {
                     outer.style.background = `conic-gradient(#FF0060 ${start * 3.6}deg, #effaeb34 0deg)`;
+                    font.style.color = '#FF0060';
                 }
                 else if (start > 25 && start <= 50) {
                     outer.style.background = `conic-gradient(#FF0060 ${25 * 3.6}deg, #F6FA70 ${start * 3.6}deg, #effaeb34 ${360 - (75 * 3.6)}deg`;
+                    font.style.color = '#F6FA70';
                 }
                 else if (start > 50 && start <= 75) {
                     outer.style.background = `conic-gradient(#FF0060 ${25 * 3.6}deg, #F6FA70 ${50 * 3.6}deg, #00DFA2 ${start * 3.6}deg, #effaeb34 ${360 - (start * 3.6)}deg`;
+                    font.style.color = '#00DFA2';
                 }
                 else if (start > 75 && start <= 100) {
                     outer.style.background = `conic-gradient(#FF0060 ${25 * 3.6}deg, #F6FA70 ${50 * 3.6}deg, #00DFA2 ${75 * 3.6}deg, #0079FF ${start * 3.6}deg, #effaeb34 ${360 - (start * 3.6)}deg`;
+                    font.style.color = '#0079FF';
                 }
 
 
