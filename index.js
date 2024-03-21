@@ -4,7 +4,7 @@ window.onload = function() {
     let button = document.querySelector(".btn");
 
     // flag
-    var clicked = 0;
+    let clicked = 0;
 
     button.addEventListener("click", function (e) {
         e.preventDefault();
